@@ -1,0 +1,47 @@
+{
+  "HomePage": {
+    "title": "Age - The Game",
+    "description": "Can you insert the correct age? Let's see...",
+    "errors": {
+      "toastErrors": {
+        "noBirthDate": "Insert a valid birth date.",
+        "birthDateTooRecent": "The birth date must be at least one year ago.",
+        "noAge": "Insert your age.",
+        "invalidRomanNumeral": "Age needs to be a Roman numeral, mate.",
+        "notCapitalized": "Are you stupid? Roman numerals are always capitalized 😡",
+        "notMatchingAge1": "You are not 1 year old. Are you trying to trick me? Alright 😈",
+        "notMatchingAgeOther": "You are not {numericAge} years old. Are you trying to trick me? Alright 😈",
+        "invalidRomanFormat": "Age needs to be a valid Roman numeral, mate."
+      },
+      "textError": "You're a dumbass. The fields are blocked until you go study roman numerals."
+    },
+    "study": "Study",
+    "success": "That's your birth 😃",
+    "labelAge": "What is your age?",
+    "labelBirth": "What is your birth date?",
+    "placeholderAge": "Your age",
+    "placeholderBirth": "Enter your birth date",
+    "submitButton": "Submit"
+  },
+  "MetadataHome": {
+    "title": "Age - The Game",
+    "description": "A simple game for you to guess your age."
+  },
+  "NotFound": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for does not exist.",
+    "message": "Oops! The page you requested could not be found.",
+    "buttonBackHome": "Go Back Home"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "pt": "🇧🇷 Português",
+    "en": "🇺🇸 English",
+    "other": "Unknown"
+  },
+  "ModeSelector": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "HomePage": {
+    "title": "Age - O Jogo",
+    "description": "Você consegue inserir a idade correta? Vamos ver...",
+    "errors": {
+      "toastErrors": {
+        "noBirthDate": "Insira uma data de nascimento válida.",
+        "birthDateTooRecent": "A data de nascimento deve ser de pelo menos um ano atrás.",
+        "noAge": "Insira sua idade.",
+        "invalidRomanNumeral": "A idade deve ser um número romano, camarada.",
+        "notCapitalized": "Você é burro? Números romanos sempre são escritos em letras maiúsculas 😡",
+        "notMatchingAge1": "Você não tem 1 ano de idade. Está tentando me enganar? Beleza 😈",
+        "notMatchingAgeOther": "Você não tem {numericAge} anos. Está tentando me enganar? Beleza 😈",
+        "invalidRomanFormat": "A idade precisa ser um número romano válido, camarada."
+      },
+      "textError": "Você é um idiota. Os campos estão bloqueados até você estudar algarismos romanos."
+    },
+    "study": "Estudar",
+    "success": "Esse é a sua data de nascimento 😃",
+    "labelAge": "Qual é a sua idade?",
+    "labelBirth": "Qual sua data de nascimento?",
+    "placeholderAge": "Sua idade",
+    "placeholderBirth": "Insira sua data de nascimento",
+    "submitButton": "Enviar"
+  },
+  "MetadataHome": {
+    "title": "Age - O Jogo",
+    "description": "Um jogo simples para você adivinhar sua idade."
+  },
+  "NotFound": {
+    "title": "Página não encontrada",
+    "description": "Desculpe, a página que você está procurando não existe.",
+    "message": "Ops! A página que você solicitou não foi encontrada.",
+    "buttonBackHome": "Voltar para ínicio"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "pt": "🇧🇷 Português",
+    "en": "🇺🇸 English",
+    "other": "Unknown"
+  },
+  "ModeSelector": {
+    "light": "Claro",
+    "dark": "Escuro",
+    "system": "Sistema"
+  }
+}
