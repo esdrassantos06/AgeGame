@@ -1,50 +1,30 @@
-# Your Age Playground
+# Age - The Game
 
-This project is a personal playground for testing programming logic using **React** and **Next.js**. It is designed to help experiment with:
+Pick your birth date, then type your age. In Roman numerals. Get it wrong and the app calls you names until you go study.
 
-- Logic challenges and programming exercises
-- Internationalization (i18n) — supporting multiple languages
-- Theme switching (e.g., light/dark mode)
+The game itself is thin on purpose: one page, a date picker, a text field, and a validator that checks the numeral parses, is uppercase, and actually matches the age implied by the birth date. What I was really after was Next.js 15 App Router with `next-intl` locale routing and theme switching on something that wasn't another todo list.
 
-## Project Structure
+## Running it
 
-- `src/components/` — Reusable React components
-- `src/app/` — Next.js app directory (routing, pages, layouts)
-- `src/i18n/` — Internationalization setup and configuration
-- `src/utils/` — Utility functions
-- `src/lib/` — Shared libraries and logic
-- `src/middleware.ts` — Middleware for custom request/response handling (e.g., localization)
-- `messages/en.json` & `messages/pt.json` — Translation files for English and Portuguese
+Node 18.18+ or Bun.
 
-## Purpose
+```bash
+bun install
+bun run dev
+```
 
-This repository is not intended for production use. Its main goals are:
+Open http://localhost:3000. The middleware reads your `Accept-Language` and redirects to `/en` or `/pt`.
 
-- To serve as a sandbox for learning and testing new ideas in React/Next.js
-- To practice implementing i18n and theme switching in a real project
-- To organize and experiment with logic problems in a modern web stack
+## Stack
 
-## Getting Started
+Next.js 15 with Turbopack in dev, React 19, TypeScript, Tailwind 4, shadcn/ui on top of Radix. `next-intl` handles the locale segment and message loading, `romans` parses the numerals, `react-day-picker` is the calendar, `sonner` throws the error toasts.
 
-1. **Install dependencies:**
-   ```bash
-   npm install
-   # or
-   yarn install
-   # or 
-   bun install
-   ```
-2. **Run the development server:**
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   # or 
-   bun run dev
-   ```
-3. **Open [http://localhost:3000](http://localhost:3000) to view the app.**
+## Where things are
 
-## Notes
+- `src/app/[locale]/page.tsx` is the whole game
+- `src/components/BirthDate.tsx` and `src/components/Age.tsx` are the two inputs
+- `src/utils/validateBirthDateWithAge.ts` decides whether you get insulted
+- `src/i18n/routing.ts` plus `src/middleware.ts` do locale detection and redirects
+- `messages/en.json` and `messages/pt.json` hold every string, insults included
 
-- This project is for personal learning and experimentation.
-- Feel free to explore, modify, and use as inspiration for your own learning journey!
+Not production software.
